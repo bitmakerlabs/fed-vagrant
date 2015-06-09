@@ -41,6 +41,9 @@ Vagrant.configure(2) do |config|
   # argument is a set of non-required options.
   # config.vm.synced_folder "../data", "/vagrant_data"
 
+  # projects folder next to this Vagrantfile will be shared with the VM
+  config.vm.synced_folder "projects", "/home/vagrant/projects"
+
   # Provider-specific configuration so you can fine-tune various
   # backing providers for Vagrant. These expose provider-specific options.
   # Example for VirtualBox:
