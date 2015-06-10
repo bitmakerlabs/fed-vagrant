@@ -10,5 +10,8 @@ apt-get install -y build-essential curl git
 curl -sL https://deb.nodesource.com/setup | bash -
 apt-get install -y nodejs
 
+# Update to latest npm
+npm install -g npm
+
 # Install Yeoman (+ dependencies) and Bitmaker Generator
 npm install -g yo grunt-cli bower generator-bitmaker
